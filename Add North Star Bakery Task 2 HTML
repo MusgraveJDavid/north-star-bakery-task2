@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Our neighborhood story, ingredient philosophy, and bakery team.">
+  <title>About | North Star Bakery</title>
+</head>
+<body>
+<a href="#main">Skip to main content</a>
+<header>
+  <a href="index.html">
+    <img src="assets/bakery-logo_c.png" alt="North Star Bakery"
+      width="140" height="120">
+  </a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<h1>A bakery built around the neighborhood.</h1>
+<p>North Star begins with a simple idea: a bakery should be a familiar
+  stop, whether you have five minutes before work or a whole morning
+  to catch up.</p>
+<section aria-labelledby="story-title">
+  <h2 id="story-title">Small batches. Familiar faces.</h2>
+  <p>Our story centers on everyday reasons to gather around food:
+    a loaf shared at dinner, a birthday cake carried carefully home,
+    or a cookie saved for someone else.</p>
+  <p>We imagine a bakery where the counter team learns your favorites
+    and helps you find something new. That welcome belongs to a
+    first-time visitor and a weekly regular.</p>
+  <img src="assets/bakery-storefront_c.png" width="288" height="172"
+    alt="Bakery window full of breads and pastries beside a dark door.">
+</section>
+<section aria-labelledby="sourcing-title">
+  <h2 id="sourcing-title">Care starts with the ingredients.</h2>
+  <h3>Choose for flavor</h3>
+  <p>Our proposed approach starts with dependable flour, butter, and
+    seasonal ingredients selected for the foods we want to bake.</p>
+  <h3>Build local relationships</h3>
+  <p>We aim to work with nearby suppliers when their ingredients
+    fit our menu and availability. No specific supplier partnership
+    is claimed for this fictional client.</p>
+  <h3>Make room for questions</h3>
+  <p>Customers should be able to ask about ingredients and preparation.
+    Allergy needs would be discussed before a pickup is confirmed.</p>
+</section>
+<section aria-labelledby="team-title">
+  <h2 id="team-title">A small team with shared care.</h2>
+  <h3>The bread baker</h3>
+  <p>Keeps an eye on dough, timing, and each loaf as it moves from
+    the workbench to the oven.</p>
+  <h3>The pastry baker</h3>
+  <p>Plans sweet counter favorites and helps turn celebration ideas
+    into practical cake options.</p>
+  <h3>The counter team</h3>
+  <p>Welcomes visitors, explains the day's selection, and gathers
+    the details needed for pickup inquiries.</p>
+</section>
+<section aria-labelledby="question-title">
+  <h2 id="question-title">Have something in mind?</h2>
+  <p>Tell us what you are planning. A simple question is a good start.</p>
+  <p><a href="contact.html#request">Contact North Star Bakery</a>.</p>
+</section>
+</main>
+<footer>
+  <p>North Star Bakery: Bread for the table. Something sweet for the road.</p>
+  <p><a href="products.html">Explore our products</a> |
+    <a href="contact.html">Hours and location</a></p>
+  <p>Fictional bakery for a course project. Business details and prices
+    are sample content; this website does not accept real orders.</p>
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Sample bakery hours, location, and an HTML inquiry form.">
+  <title>Contact | North Star Bakery</title>
+</head>
+<body>
+<a href="#main">Skip to main content</a>
+<header>
+  <a href="index.html">
+    <img src="assets/bakery-logo_c.png" alt="North Star Bakery"
+      width="140" height="120">
+  </a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<h1>Let's make room for something good.</h1>
+<p>Tell us what you would like and when you hope to pick it up.
+  General questions are welcome, too.</p>
+<section aria-labelledby="form-title">
+  <h2 id="form-title">Your bakery inquiry</h2>
+  <p id="demo-note">Classroom demonstration: use sample information.
+    This HTML-only form checks required fields and email format.
+    Submitting reloads this page with entries in the address bar;
+    it does not contact a bakery or place an order.</p>
+  <form id="request" action="contact.html#request" method="get"
+    aria-labelledby="form-title" aria-describedby="demo-note">
+    <fieldset>
+      <legend>Your contact details</legend>
+      <p>
+        <label for="name">Name (required)</label><br>
+        <input id="name" name="name" type="text" required
+          autocomplete="name" maxlength="100">
+      </p>
+      <p>
+        <label for="email">Email (required)</label><br>
+        <input id="email" name="email" type="email" required
+          autocomplete="email" maxlength="200">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Your request</legend>
+      <p>
+        <label for="request-type">Request type (required)</label><br>
+        <select id="request-type" name="request_type" required>
+          <option value="">Choose a request type</option>
+          <option value="preorder">Preorder inquiry</option>
+          <option value="general">General question</option>
+        </select>
+      </p>
+      <p>
+        <label for="pickup-date">Preferred pickup date</label><br>
+        <input id="pickup-date" name="pickup_date" type="date"
+          aria-describedby="pickup-help">
+      </p>
+      <p id="pickup-help">For a preorder inquiry, please choose a
+        preferred date. Leave blank for a general question.
+        Closed Mondays; dates would need confirmation.</p>
+      <p>
+        <label for="item-details">Item details or question
+          (required)</label><br>
+        <textarea id="item-details" name="item_details" required
+          rows="4" cols="28" maxlength="2000"
+          aria-describedby="item-help"></textarea>
+      </p>
+      <p id="item-help">For preorders, include items and quantities.
+        For cakes, add the number of guests and decoration ideas.</p>
+      <p>
+        <label for="allergy-notes">Allergy notes (optional)</label><br>
+        <textarea id="allergy-notes" name="allergy_notes"
+          rows="3" cols="28" maxlength="1000"
+          aria-describedby="allergy-help"></textarea>
+      </p>
+      <p id="allergy-help">Describe concerns so ingredients and
+        preparation can be discussed. A note does not confirm
+        an accommodation.</p>
+    </fieldset>
+    <p><button type="submit">Submit sample inquiry</button></p>
+  </form>
+</section>
+<section aria-labelledby="location-title">
+  <h2 id="location-title">Come by the counter.</h2>
+  <address>North Star Bakery<br>
+    125 North Star Lane<br>
+    Maple Grove, MN 55311</address>
+  <p>Sample location for this fictional client.</p>
+  <h3>Hours of operation</h3>
+  <dl>
+    <dt>Tuesday-Friday</dt><dd>7 am-4 pm</dd>
+    <dt>Saturday-Sunday</dt><dd>8 am-2 pm</dd>
+    <dt>Monday</dt><dd>Closed</dd>
+  </dl>
+  <p>Pickup inquiries would be subject to availability.
+    Walk-in selections may vary throughout the day.</p>
+  <p><a href="products.html">Browse products before your inquiry</a>.</p>
+</section>
+</main>
+<footer>
+  <p>North Star Bakery: Bread for the table. Something sweet for the road.</p>
+  <p><a href="products.html">Explore our products</a> |
+    <a href="contact.html">Hours and location</a></p>
+  <p>Fictional bakery for a course project. Business details and prices
+    are sample content; this website does not accept real orders.</p>
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Neighborhood breads, pastries, cakes, and pickup inquiries.">
+  <title>Home | North Star Bakery</title>
+</head>
+<body>
+<a href="#main">Skip to main content</a>
+<header>
+  <a href="index.html">
+    <img src="assets/bakery-logo_c.png" alt="North Star Bakery"
+      width="140" height="120">
+  </a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<h1>Good bread. A sweeter morning.</h1>
+<p>Pick up a loaf for dinner, a pastry for the commute, or something
+  worth sharing. There is always a place for you at North Star.</p>
+<p><a href="products.html">See what is baking</a> or
+  <a href="contact.html#request">plan a pickup inquiry</a>.</p>
+<section aria-labelledby="featured-title">
+  <h2 id="featured-title">This week's favorite</h2>
+  <figure>
+    <img src="assets/bakery-signature-loaf_c.png" width="216"
+      height="216" alt="Flour-dusted round loaf in a striped cloth.">
+    <figcaption>Signature Loaf: a crisp crust, a soft center, and
+      plenty to share. Sample price: $8-$10 each.</figcaption>
+  </figure>
+</section>
+<section aria-labelledby="known-title">
+  <h2 id="known-title">What we are known for</h2>
+  <ul>
+    <li>Breads for your table, from morning toast to family dinners.</li>
+    <li>Cookies and pastries for a commute or a small sweet break.</li>
+    <li>Cakes and sharing boxes for birthdays and gatherings.</li>
+  </ul>
+</section>
+<section aria-labelledby="pastry-title">
+  <h2 id="pastry-title">From the pastry case</h2>
+  <p>Choose a few favorites for a family visit or an afternoon
+    with friends.</p>
+  <picture>
+    <source media="(min-width: 48rem)" width="288" height="144"
+      srcset="assets/bakery-feature-large_c.png">
+    <img src="assets/bakery-feature-small_c.png" width="288"
+      height="288" alt="Cookies and pastries on bakery display trays.">
+  </picture>
+</section>
+<section aria-labelledby="visit-title">
+  <h2 id="visit-title">Visit the neighborhood</h2>
+  <p>Sample location: 125 North Star Lane, Maple Grove, MN 55311.</p>
+  <p>Tuesday-Friday: 7 am-4 pm. Saturday-Sunday: 8 am-2 pm.
+    Closed Monday.</p>
+  <p><a href="contact.html">Find hours and pickup details</a>.</p>
+  <h3>A welcome from North Star</h3>
+  <p>Listen to the supplied bakery welcome message.</p>
+  <audio controls preload="metadata" aria-label="Bakery welcome">
+    <source src="assets/bakery-welcome_c.mp3" type="audio/mpeg">
+    Your browser does not support audio playback.
+    <a href="assets/bakery-welcome_c.mp3">Download the audio welcome</a>.
+  </audio>
+  <p><a href="assets/bakery-welcome_c.mp3" download>
+    Download the audio welcome</a> (about 25 seconds).</p>
+</section>
+</main>
+<footer>
+  <p>North Star Bakery: Bread for the table. Something sweet for the road.</p>
+  <p><a href="products.html">Explore our products</a> |
+    <a href="contact.html">Hours and location</a></p>
+  <p>Fictional bakery for a course project. Business details and prices
+    are sample content; this website does not accept real orders.</p>
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Browse breads, pastries, and cakes with sample price ranges.">
+  <title>Products | North Star Bakery</title>
+</head>
+<body>
+<a href="#main">Skip to main content</a>
+<header>
+  <a href="index.html">
+    <img src="assets/bakery-logo_c.png" alt="North Star Bakery"
+      width="140" height="120">
+  </a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" aria-current="page">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<h1>Find your next favorite.</h1>
+<p>A loaf for the week, a treat for today, or a cake for your gathering.
+  Browse our sample menu and tell us what you hope to pick up.</p>
+<p>Prices are planning ranges. Selections and pickup times would
+  need confirmation before a real order could be accepted.</p>
+<nav aria-label="Product categories">
+  <ul>
+    <li><a href="#breads">Breads</a></li>
+    <li><a href="#pastries">Pastries and cookies</a></li>
+    <li><a href="#cakes">Cakes and gatherings</a></li>
+  </ul>
+</nav>
+<section id="breads">
+  <h2>Breads</h2>
+  <img src="assets/bakery-bread_c.png" width="288" height="288"
+    alt="Seeded and flour-dusted bread loaves displayed behind glass.">
+  <dl>
+    <dt>Signature Loaf: $8-$10 each</dt>
+    <dd>A round loaf with a crisp crust and soft center. Slice it
+      thick for toast or pass it around the dinner table.</dd>
+    <dt>Seeded table loaf: $9-$12 each</dt>
+    <dd>A hearty option with seeds for extra texture, well suited
+      to sandwiches and soup nights.</dd>
+    <dt>Everyday sandwich bread: $7-$9 each</dt>
+    <dd>A soft, easy-slicing loaf for packed lunches and familiar
+      breakfast favorites.</dd>
+  </dl>
+</section>
+<section id="pastries">
+  <h2>Pastries and cookies</h2>
+  <img src="assets/bakery-feature-small_c.png" width="288" height="288"
+    alt="Assorted cookies and pastries arranged on bakery trays.">
+  <dl>
+    <dt>Counter pastries: $3-$6 each</dt>
+    <dd>A changing sweet selection for a quick stop or a slow morning.</dd>
+    <dt>Cookie favorites: $2-$4 each</dt>
+    <dd>Choose from the day's selection, including chocolate cookies.</dd>
+    <dt>Sharing box: $18-$30 per box</dt>
+    <dd>A mixed selection for an office break or a visit with friends.
+      Ask about the assortment and serving count.</dd>
+  </dl>
+</section>
+<section id="cakes">
+  <h2>Cakes and gatherings</h2>
+  <dl>
+    <dt>Celebration cakes: $35-$70 each</dt>
+    <dd>Share your occasion, preferred flavors, and number of guests
+      so suitable cake options can be discussed.</dd>
+    <dt>Small event assortment: $30-$60 per tray</dt>
+    <dd>Bakery favorites for a family gathering or team meeting.
+      The final range depends on quantities and choices.</dd>
+  </dl>
+  <h3>Tell us about your plans</h3>
+  <p>Include your items, quantities, and preferred pickup date.
+    For cakes, add the serving count and any decoration ideas.</p>
+  <p>Include allergy concerns so ingredients and preparation can
+    be discussed before any order is confirmed.</p>
+  <p><a href="contact.html#request">Start a pickup inquiry</a>.</p>
+</section>
+</main>
+<footer>
+  <p>North Star Bakery: Bread for the table. Something sweet for the road.</p>
+  <p><a href="products.html">Explore our products</a> |
+    <a href="contact.html">Hours and location</a></p>
+  <p>Fictional bakery for a course project. Business details and prices
+    are sample content; this website does not accept real orders.</p>
+</footer>
+</body>
+</html>
